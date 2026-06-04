@@ -1,0 +1,19 @@
+import requests
+
+def get_crypto_prices():
+    # ক্রিপ্টোকারেন্সির দাম জানার একটি ফ্রি API
+    url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd"
+    
+    try:
+        response = requests.get(url).json()
+        btc = response['bitcoin']['usd']
+        eth = response['ethereum']['usd']
+        
+        print("====== LIVE CRYPTO PRICES ======")
+        print(f"Bitcoin (BTC): ${btc} USD")
+        print(f"Ethereum (ETH): ${eth} USD")
+        print("================================")
+    except Exception as e:
+        print("ইন্টারনেট কানেকশন চেক করুন অথবা পরে চেষ্টা করুন।")
+
+get_crypto_prices()
