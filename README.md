@@ -1,23 +1,29 @@
----
+# My Python Learning Journey 🚀
 
-## 🛠️ প্রোজেক্টসমূহ (Projects)
+**My first GitHub repository** dedicated to learning Python programming. This repo serves as a collection of my small projects, scripts, and experiments as I build my skills in Python.
 
-এখানে আমার তৈরি করা কিছু ইউনিক পাইথন স্ক্রিপ্ট রয়েছে:
+### 🎯 About This Repository
+This repository showcases my progress in learning Python. It contains various beginner to intermediate level scripts that demonstrate my understanding of core programming concepts, problem-solving, and creativity.
 
-1. **Calculator (`calculator.py`)**: বেসিক যোগ, বিয়োগ, গুণ, ভাগের একটি সহজ ক্যালকুলেটর।
-2. **Secret Cipher & Code (`secret_cipher.py` / `secret_code.py`)**: যেকোনো টেক্সটকে গোপন কোডে রূপান্তর বা ডিক্রিপ্ট করার সিকিউরিটি টুল।
-3. **Pencil Sketch Creator (`image_art.py`)**: যেকোনো ছবিকে পেনসিল স্কেচে রূপান্তর করার একটি OpenCV প্রোজেক্ট।
-4. **Live Crypto Price Fetcher (`news_fetcher.py`)**: ইন্টারনেট থেকে লাইভ বিটকয়েন ও ক্রিপ্টোর দাম জানার স্ক্রিপ্ট।
-5. **Password Shield (`password_shield.py`)**: আপনার পাসওয়ার্ড কতটা স্ট্রং তা পরীক্ষা করার জন্য একটি অ্যানালাইজার।
+### 📁 Projects Included
 
----
+- **calculator.py** — A simple command-line calculator
+- **hello.py** — Classic "Hello, World!" program
+- **password_shield.py** — Secure password generator and management tool
+- **secret_cipher.py** — Text encryption and decryption using ciphers
+- **news_fetcher.py** — Script to fetch and display latest news
+- **image_art.py** — Creative text-based image art generator
 
-## 📈 আমার লক্ষ্য (My Goals)
-- [ ] পাইথনের বেসিক ও অ্যাডভান্সড লজিক সম্পূর্ণ করা।
-- [ ] বিভিন্ন ফ্রি API ব্যবহার করে রিয়েল-টাইম ডাটা প্রজেক্ট তৈরি করা।
-- [ ] ভবিষ্যতে পাইথন দিয়ে ডেটা সায়েন্স বা ওয়েব ডেভেলপমেন্ট (Django/FastAPI) শেখা।
+### 🛠️ Technologies Used
+- Python 3
+- Various libraries (e.g., `requests`, `cryptography`, etc.)
 
----
+### 🚀 How to Run
 
-## 📫 আমার সাথে যোগাযোগ করুন
-আপনার কোনো পরামর্শ বা আইডিয়া থাকলে আমাকে জানাতে পারেন। কোডগুলো ভালো লাগলে অবশ্যই একটি **Star (⭐)** দিয়ে যাবেন!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iftu8/my-python-learning.git
+   cd my-python-learning
+   python calculator.py
+# or
+python news_fetcher.py
