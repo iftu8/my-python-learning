@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App UI</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #0b132b;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .custom-gradient {
+      background: linear-gradient(180deg, #0f1c3f 0%, #0b132b 100%);
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-4 text-white">
+
+  <!-- Mobile Container Wrapper -->
+  <div class="w-full max-w-sm custom-gradient rounded-3xl shadow-2xl overflow-hidden border border-gray-800 flex flex-col justify-between" style="height: 800px;">
+    
+    <!-- Top Status & Header -->
+    <div class="p-6 pb-2">
+      <!-- Phone Status Bar Simulation -->
+      <div class="flex justify-between items-center text-xs text-gray-400 mb-4 px-1">
+        <span>8:11</span>
+        <div class="flex items-center space-x-1.5">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters text-sm"></i>
+          <span>26%</span>
+        </div>
+      </div>
+
+      <!-- App Header Area -->
+      <div class="flex justify-between items-center mt-2">
+        <h1 class="text-3xl font-semibold tracking-wide">Pahartali</h1>
+        <div class="flex items-center space-x-4 text-xl text-gray-300">
+          <i class="fa-solid fa-city text-lg"></i>
+          <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart / Graphic Placeholder Area -->
+    <div class="relative h-24 my-2 px-6">
+      <!-- Temperature Line Graphic Simulation -->
+      <svg class="w-full h-full" viewBox="0 0 300 100" preserveAspectRatio="none">
+        <path d="M 0 50 Q 75 50, 150 50 T 300 20" fill="none" stroke="#4ade80" stroke-width="3"/>
+        <path d="M 0 50 Q 75 50, 150 50 T 300 20 L 300 100 L 0 100 Z" fill="url(#grad)" opacity="0.1"/>
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <!-- Highlights Points -->
+      <div class="absolute top-7 left-4 bg-green-400 text-black text-xs font-bold px-1.5 py-0.5 rounded-full border-2 border-green-300 shadow">28</div>
+      <div class="absolute top-14 right-24 text-green-400 text-xs font-semibold">27</div>
+    </div>
+
+    <!-- Hourly Forecast Row -->
+    <div class="grid grid-cols-5 text-center px-4 py-2 border-b border-gray-800/50">
+      <!-- Column 1 (Active) -->
+      <div class="flex flex-col items-center justify-between space-y-3 bg-slate-800/30 py-2 rounded-xl">
+        <i class="fa-solid fa-cloud-moon text-amber-400 text-lg"></i>
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-fan text-gray-400 text-sm animate-spin" style="animation-duration: 3s;"></i>
+          <span class="text-[10px] text-gray-400 mt-1">Force 2</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-[9px] bg-purple-900/50 text-purple-300 border border-purple-500/40 rounded px-1 font-bold">UV</span>
+          <span class="text-[9px] text-purple-400 mt-0.5">Weak</span>
+        </div>
+        <span class="text-xs font-medium text-white">06/06</span>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="flex flex-col items-center justify-between space-y-3 py-2">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-cloud-showers-heavy text-blue-400 text-lg"></i>
+          <span class="text-[9px] text-blue-300 mt-0.5">63%</span>
+        </div>
+        <i class="fa-solid fa-fan text-gray-500 text-sm"></i>
+        <span class="text-[9px] text-purple-400/70 border border-purple-500/20 rounded px-1">UV</span>
+        <span class="text-xs text-gray-400">02:00</span>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="flex flex-col items-center justify-between space-y-3 py-2">
+        <i class="fa-solid fa-cloud-moon text-blue-400 text-lg"></i>
+        <i class="fa-solid fa-fan text-gray-500 text-sm"></i>
+        <span class="text-[9px] text-purple-400/70 border border-purple-500/20 rounded px-1">UV</span>
+        <span class="text-xs text-gray-400">04:00</span>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="flex flex-col items-center justify-between space-y-3 py-2">
+        <i class="fa-solid fa-cloud-sun text-amber-400 text-lg"></i>
+        <i class="fa-solid fa-fan text-gray-500 text-sm"></i>
+        <span class="text-[9px] text-purple-400/70 border border-purple-500/20 rounded px-1">UV</span>
+        <span class="text-xs text-gray-400">06:00</span>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="flex flex-col items-center justify-between space-y-3 py-2">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-cloud-showers-heavy text-blue-400 text-lg"></i>
+          <span class="text-[9px] text-blue-300 mt-0.5">73%</span>
+        </div>
+        <i class="fa-solid fa-fan text-gray-500 text-sm"></i>
+        <span class="text-[9px] text-purple-400/70 border border-purple-500/20 rounded px-1">UV</span>
+        <span class="text-xs text-gray-400">08:00</span>
+      </div>
+    </div>
+
+    <!-- Expand Arrow Menu -->
+    <div class="flex justify-center -my-2 text-gray-500">
+      <i class="fa-solid fa-chevron-up text-xs"></i>
+    </div>
+
+    <!-- 5-Day Forecast List Section -->
+    <div class="px-6 py-4 space-y-4 flex-grow flex flex-col justify-end">
+      
+      <!-- Day 1: Yesterday -->
+      <div class="flex justify-between items-center text-sm text-gray-400">
+        <div class="w-24 text-left"><span class="mr-2 text-xs opacity-50">06/04</span> Yesterday</div>
+        <div class="flex-1 flex justify-center"><i class="fa-solid fa-cloud-bolt text-blue-400 text-lg"></i></div>
+        <div class="w-16 text-right flex justify-end space-x-4">
+          <span class="text-gray-500">27</span>
+          <span class="text-gray-400">36</span>
+        </div>
+      </div>
+
+      <!-- Day 2: Today -->
+      <div class="flex justify-between items-center text-sm font-medium">
+        <div class="w-24 text-left text-white"><span class="mr-2 text-xs text-gray-500">06/05</span> Today</div>
+        <div class="flex-1 flex justify-center items-center space-x-1">
+          <i class="fa-solid fa-cloud-showers-heavy text-blue-400 text-lg"></i>
+          <span class="text-[10px] text-blue-400">55%</span>
+        </div>
+        <div class="w-16 text-right flex justify-end space-x-4">
+          <span class="text-gray-400">27</span>
+          <span class="text-white font-semibold">36</span>
+        </div>
+      </div>
+
+      <!-- Day 3: Tomorrow -->
+      <div class="flex justify-between items-center text-sm">
+        <div class="w-24 text-left text-gray-300"><span class="mr-2 text-xs text-gray-500">06/06</span> Tomorrow</div>
+        <div class="flex-1 flex justify-center items-center space-x-1">
+          <i class="fa-solid fa-cloud-showers-heavy text-blue-400 text-lg"></i>
+          <span class="text-[10px] text-blue-400">75%</span>
+        </div>
+        <div class="w-16 text-right flex justify-end space-x-4">
+          <span class="text-gray-400">27</span>
+          <span class="text-gray-300">34</span>
+        </div>
+      </div>
+
+      <!-- Day 4: Sunday -->
+      <div class="flex justify-between items-center text-sm">
+        <div class="w-24 text-left text-gray-300"><span class="mr-2 text-xs text-gray-500">06/07</span> Sun</div>
+        <div class="flex-1 flex justify-center"><i class="fa-solid fa-cloud-sun text-amber-400 text-lg"></i></div>
+        <div class="w-16 text-right flex justify-end space-x-4">
+          <span class="text-gray-400">27</span>
+          <span class="text-gray-300">32</span>
+        </div>
+      </div>
+
+      <!-- Day 5: Monday -->
+      <div class="flex justify-between items-center text-sm">
+        <div class="w-24 text-left text-gray-300"><span class="mr-2 text-xs text-gray-500">06/08</span> Mon</div>
+        <div class="flex-1 flex justify-center"><i class="fa-solid fa-cloud-sun text-amber-400 text-lg"></i></div>
+        <div class="w-16 text-right flex justify-end space-x-4">
+          <span class="text-gray-400">27</span>
+          <span class="text-gray-300">32</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Navigation / Pagination Dots & Footer Navigation -->
+    <div class="p-4 flex flex-col items-center justify-between space-y-4">
+      <!-- Pagination Dots -->
+      <div class="flex space-x-1.5 items-center">
+        <i class="fa-solid fa-location-dot text-xs text-gray-400"></i>
+        <span class="w-1.5 h-1.5 bg-white rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-gray-600 rounded-full"></span>
+      </div>
+
+      <!-- Android Navigation Bar Buttons -->
+      <div class="w-full flex justify-around text-gray-400 text-sm pt-2 border-t border-gray-800/40">
+        <i class="fa-solid fa-chevron-left cursor-pointer hover:text-white"></i>
+        <i class="fa-regular fa-circle cursor-pointer hover:text-white text-xs"></i>
+        <i class="fa-regular fa-square cursor-pointer hover:text-white text-xs"></i>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
