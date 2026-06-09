@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শ্রমিকবন্ধু - গার্মেন্টস শ্রমিকদের আপদকালীন আর্থিক সহায়তা</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Navigation */
+        header {
+            background: #111;
+            border-bottom: 3px solid #ffcc00;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 60px;
+        }
+        #hero h1 {
+            font-size: 48px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+        .btn {
+            background: #ffcc00;
+            color: #111;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 0;
+            background: #222;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 36px;
+            color: #ffcc00;
+            margin-bottom: 40px;
+        }
+        #about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            color: #ccc;
+        }
+
+        /* Features Section */
+        #features {
+            padding: 80px 0;
+            background: #1a1a1a;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .feature-box {
+            background: #262626;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 4px solid #ffcc00;
+            transition: 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        .feature-box h3 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .feature-box p {
+            color: #bbb;
+            font-size: 16px;
+        }
+
+        /* App Demo Section */
+        #app-demo {
+            padding: 80px 0;
+            background: #222;
+            text-align: center;
+        }
+        .demo-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .demo-text {
+            text-align: left;
+            max-width: 500px;
+        }
+        .demo-text ul {
+            list-style: none;
+        }
+        .demo-text ul li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .demo-text ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 0;
+            background: #111;
+            text-align: center;
+        }
+        #contact p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        #contact a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">শ্রমিকবন্ধু</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">হোম</a></li>
+                    <li><a href="#about">পরিচিতি</a></li>
+                    <li><a href="#features">সুবিধাসমূহ</a></li>
+                    <li><a href="#app-demo">অ্যাপ ড্যাশবোর্ড</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>গার্মেন্টস শ্রমিকদের আপদকালীন আর্থিক সহায়তা ও সাশ্রয়ী বাজার সুবিধা</h1>
+            <p>সুদখোর মহাজনের উপর নির্ভরতা কমিয়ে শ্রমিকদের জন্য দ্রুত, সাশ্রয়ী ও নিরাপদ ডিজিটাল আর্থিক সেবা।</p>
+            <a href="#about" class="btn">আরও জানুন</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">প্রকল্প পরিচিতি</h2>
+            <p>বাংলাদেশের গার্মেন্টস শ্রমিকরা আর্থিকভাবে অত্যন্ত ঝুঁকিপূর্ণ। জরুরি প্রয়োজনে তারা উচ্চ সুদে মহাজনদের কাছ থেকে ঋণ নিতে বাধ্য হন। "শ্রমিকবন্ধু" একটি মোবাইল অ্যাপ যা মোবাইল প্রযুক্তির মাধ্যমে সাশ্রয়ী জরুরি নগদ সহায়তা ও বাজার সুবিধা প্রদান করে শ্রমিকদের আর্থিক স্বাধীনতা নিশ্চিত করে।</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">মূল সুবিধাসমূহ</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>জরুরি আর্থিক সহায়তা</h3>
+                    <p>মহাজনের উপর নির্ভরতা ছাড়াই তাৎক্ষণিক নগদ টাকা তোলার সুবিধা।</p>
+                </div>
+                <div class="feature-box">
+                    <h3>মাত্র ৩০ টাকা সার্ভিস ফি</h3>
+                    <p>খুবই সীমিত এবং সাশ্রয়ী সার্ভিস চার্জে টাকা ক্যাশ-আউট করার সুযোগ।</p>
+                </div>
+                <div class="feature-box">
+                    <h3>তাৎক্ষণিক ট্রান্সফার</h3>
+                    <p>সরাসরি নিজের bKash বা Nagad নম্বরে মুহূর্তের মধ্যে টাকা চলে আসবে।</p>
+                </div>
+                <div class="feature-box">
+                    <h3>সাশ্রয়ী ডিসকাউন্ট বাজার</h3>
+                    <p>চাল, ডাল ও অন্যান্য মৌলিক নিত্যপ্রয়োজনীয় পণ্য বাজারমূল্যের চেয়ে কম দামে ক্রয়ের সুবিধা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app-demo">
+        <div class="container">
+            <h2 class="section-title">সহজ ও আধুনিক অ্যাপ ড্যাশবোর্ড</h2>
+            <div class="demo-content">
+                <div class="demo-img">
+                    <div style="width: 280px; height: 500px; background: #262626; border: 8px solid #444; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #ffcc00; font-weight: bold; box-shadow: 0px 10px 20px rgba(0,0,0,0.5);">
+                        [ App Mockup Placeholder ]
+                    </div>
+                </div>
+                <div class="demo-text">
+                    <ul>
+                        <li><strong>হোম ড্যাশবোর্ড:</strong> মাসিক সঞ্চিত বেতন খুব সহজেই দেখতে পাবেন।</li>
+                        <li><strong>জরুরি উত্তোলন বোতাম (কমলা):</strong> এক ক্লিকেই তাৎক্ষণিক bKash/Nagad ট্রান্সফার।</li>
+                        <li><strong>ডিসকাউন্ট বাজার বোতাম (বেগুনী):</strong> সাশ্রয়ী মূল্যে নিত্যপণ্য অর্ডার করার সুবিধা।</li>
+                        <li><strong>অডিও সহায়তা (মাইক আইকন):</strong> অক্ষরজ্ঞানহীন শ্রমিকদের জন্য বিশেষ ভয়েস গাইড সুবিধা।</li>
+                        <li><strong>সহজ পরিশোধ:</strong> মাস শেষে বেতন থেকে স্বয়ংক্রিয় ঝামেলামুক্ত পরিশোধ ব্যবস্থা।</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">যোগাযোগ করুন</h2>
+            <p>আমাদের প্রজেক্ট সম্পর্কে জানতে বা পার্টনারশিপের জন্য যোগাযোগ করুন:</p>
+            <p>📞 ফোন: <strong>+880-1700-000000</strong></p>
+            <p>✉ ইমেইল: <strong>info@sromikbondhu.com.bd</strong></p>
+            <p>📍 ঠিকানা: ঢাকা, বাংলাদেশ</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 শ্রমিকবন্ধু (SromikBondhu Tech). সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>
