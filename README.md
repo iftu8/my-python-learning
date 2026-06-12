@@ -25,10 +25,10 @@ If you are a client or collaborator looking to deploy high-tier automation archi
   <a href="mailto:iftekharc78@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-iftekharc78@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
-  <a href="https://linkedin.com/in/iftekhar-ahmed-chowdhury">
+  <a href="https://www.linkedin.com/in/iftekhar-ahmed-chowdhury-aa432b416" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://instagram.com/i_f_t_uu">
+  <a href="https://instagram.com/i_f_t_uu" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-@i__f__t__uu-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
 </p>
@@ -40,21 +40,21 @@ If you are a client or collaborator looking to deploy high-tier automation archi
 Based on the core structure displayed in my codebase (referenced in `1000055280.jpg`), the repository is partitioned into distinct technical layers:
 
 ### 🔒 Cyber Defence & Cryptography
-*   **`file_fortress.py` / `parallel_integrity_s...`** — Multi-threaded file hashing, asset locking, and continuous binary validation systems.
-*   **`password_shield.py` / `password_generator.py`** — Localized salted hashing vaults for credential security.
-*   **`secret_cipher.py` / `secret_code.py` / `invisible_stego_en...`** — High-level payload embedding inside spatial image data (Steganography).
-*   **`log_security_analyzer.py`** — Algorithmic log parsers to isolate anomalies and brute-force indicators.
+* **`file_fortress.py` / `parallel_integrity_s...`** — Multi-threaded file hashing, asset locking, and continuous binary validation systems.
+* **`password_shield.py` / `password_generator.py`** — Localized salted hashing vaults for credential security.
+* **`secret_cipher.py` / `secret_code.py` / `invisible_stego_en...`** — High-level payload embedding inside spatial image data (Steganography).
+* **`log_security_analyzer.py`** — Algorithmic log parsers to isolate anomalies and brute-force indicators.
 
 ### ⚙️ Microservices & Autonomous Crawlers
-*   **`weather_tracker.py` / `currency_tracker.py`** — Real-time external state synchronization modules using concurrent connection pools.
-*   **`news_fetcher.py`** — Asynchronous DOM parsers engineered to bypass generic rate limits.
-*   **`file_organizer.py` / `organizer.py`** — High-speed OS-level I/O automation mapping unstructured raw streams into logical directories.
+* **`weather_tracker.py` / `currency_tracker.py`** — Real-time external state synchronization modules using concurrent connection pools.
+* **`news_fetcher.py`** — Asynchronous DOM parsers engineered to bypass generic rate limits.
+* **`file_organizer.py` / `organizer.py`** — High-speed OS-level I/O automation mapping unstructured raw streams into logical directories.
 
 ### 🧠 Algorithmic Logic & Aesthetics
-*   **`machine_learning_...`** — Native implementation of processing layers and core array computations.
-*   **`advanced_math_e...` / `calculator.py`** — High-precision mathematical computational solvers.
-*   **`neon_geometric_ar...` / `image_art.py` / `mystic_art.py`** — Algorithmic text and vector matrix renderers.
-*   **`cyber_clock.py` / `progress_tracker.py`** — Interactive runtime interfaces tracking internal performance analytics.
+* **`machine_learning_...`** — Native implementation of processing layers and core array computations.
+* **`advanced_math_e...` / `calculator.py`** — High-precision mathematical computational solvers.
+* **`neon_geometric_ar...` / `image_art.py` / `mystic_art.py`** — Algorithmic text and vector matrix renderers.
+* **`cyber_clock.py` / `progress_tracker.py`** — Interactive runtime interfaces tracking internal performance analytics.
 
 ---
 
