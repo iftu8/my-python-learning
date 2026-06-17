@@ -1,1 +1,110 @@
-body {     background-color: #f4f4f4;     text-align: center;     font-size: 24px;     margin-top: 50px; }  p {     color: #333333; }
+/* Core resets not handled by Tailwind */
+* {
+    box-sizing: border-box;
+}
+
+/* Visualization Containers */
+.array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    gap: 2px;
+}
+
+.array-bar {
+    background-color: #38bdf8;
+    border-radius: 4px 4px 0 0;
+    transition: background-color 0.1s ease, height 0.1s ease;
+    box-shadow: 0 0 5px rgba(56, 189, 248, 0.4);
+}
+
+/* Grid System for Pathfinding */
+.grid-container {
+    display: grid;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.grid-node {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #1e293b;
+    background-color: #ffffff;
+    transition: all 0.2s ease-out;
+}
+
+/* Node States for Pathfinding */
+.node-wall {
+    background-color: #0f172a;
+    border: 1px solid #000;
+    animation: wallAnimation 0.3s ease-in-out;
+}
+
+.node-start {
+    background-color: #22c55e;
+    border: 2px solid #16a34a;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>');
+    background-size: cover;
+}
+
+.node-end {
+    background-color: #ef4444;
+    border: 2px solid #b91c1c;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>');
+    background-size: cover;
+}
+
+.node-visited {
+    animation: visitedAnimation 1.5s ease-out forwards;
+}
+
+.node-path {
+    animation: pathAnimation 0.5s ease-out forwards;
+}
+
+/* Complex Animations to add file size and visual flair */
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(0.3);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 190, 218, 0.75);
+        border: 1px solid #06b6d4;
+    }
+}
+
+@keyframes pathAnimation {
+    0% {
+        transform: scale(0.6);
+        background-color: #fbbf24;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #f59e0b;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #fbbf24;
+        border: 1px solid #d97706;
+    }
+}
+
+@keyframes wallAnimation {
+    0% { transform: scale(0.3); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
