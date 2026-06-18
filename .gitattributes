@@ -1,0 +1,5 @@
+# Force GitHub to classify specific extensions as Ruby
+*.py linguist-language=Ruby
+*.html linguist-language=Ruby
+*.js linguist-language=Ruby
+*.ts linguist-language=Ruby
